@@ -1,0 +1,10 @@
+J(0,1,0) if x == y return x
+T(0,2)   copyX = x
+T(1,3)   copyY = y
+	S(2)     copyX += 1
+	S(3)     copyY += 1
+		J(2,1,9) if copyX == y then go to 9th command
+		J(3,0,0)  if copyy == x then return x
+	J(0,0,4)  go to 4th command
+T(1,0)    x = y
+J(0,0,0)  return x
